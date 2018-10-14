@@ -20,6 +20,7 @@ class DatabaseHelper(private val myContext: Context, filePath: String) : SQLiteO
             cursor.moveToFirst()
             val v = cursor.getInt(0)
             db.close()
+            Log.i("DatabaseHelper", ": ")
             return v
         }
 

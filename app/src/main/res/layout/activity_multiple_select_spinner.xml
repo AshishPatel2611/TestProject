@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultipleSelectSpinner">
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp" />
+
+
+    <com.example.ashishpatel.myapplication.MultiSpinner
+        android:id="@+id/multispinner"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_below="@+id/spinner" />
+</RelativeLayout>
