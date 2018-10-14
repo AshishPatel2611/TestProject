@@ -14,7 +14,7 @@ class DatabaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_database)
-        Log.i("DatabaseActivity", "onCreate: ")
+     
         dbHelper = DatabaseHelper(this, getFilesDir().getAbsolutePath());
         try {
             dbHelper!!.prepareDatabase()
